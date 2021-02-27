@@ -1,0 +1,14 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    # .yml配置项要用-分隔，而不是驼峰式，比如serviceUrl
+    # 如果使用驼峰，spring cloud会读不到你配的这个key, 导致使用默认的defaultZone, 即http:// localhost:8761/eureka
+    # 后果：没注册进去
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+
+spring:
+  application:
+    name: eurekaprovider

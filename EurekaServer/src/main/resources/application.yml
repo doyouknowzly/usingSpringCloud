@@ -1,0 +1,27 @@
+server:
+  #UI页面:http://localhost:port/
+  port: 9000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    #通过下面2个false的配置，表示这是一个server(不注册，不拉配置)
+    registerWithEureka: false
+    fetchRegistry: false
+
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    #Eureka Server默认有保护机制， 15分钟内是否有85%的心跳统计失败，如果有，就进入保护机制。
+    # (短时间内的大量掉线，很可能是server和service间的网络通信问题，可能并不是Service自己的问题)
+    #此时，如果有服务上、下线， 注册表不会更新
+
+    #so，本地开发环境调试时，可以将自我保护机制关掉
+    #线上的话，服务停机要使用Cancel优雅停机，自己告诉Eureka Server说"我准备停啦！"
+    enable-self-preservation: false
+
+spring:
+  application:
+    name: eurka-server
+
