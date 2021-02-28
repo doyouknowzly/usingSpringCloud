@@ -21,6 +21,7 @@ eureka:
     #线上的话，服务停机要使用Cancel优雅停机，自己告诉Eureka Server说"我准备停啦！"
     enable-self-preservation: false
 
+    #todo 目前使用了这个配置后， eureka后台还是可以看到kill掉的Service, 虽然不会再调用了， 需要研究优雅、自动下线的方式
 spring:
   application:
     name: eurka-server

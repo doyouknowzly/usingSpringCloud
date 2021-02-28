@@ -32,7 +32,6 @@ public class RpcUserService {
     }
 
     public String login(String userName, String password){
-        ServiceInstance serviceInstance = loadBalancerClient.choose("userfacade");
         String url = "http://" + "eurekaProvider" + "/login?userName=" +userName +"&password="+password;
         String result = restTemplate.getForObject(
                 url, String.class) + " from consumer";
