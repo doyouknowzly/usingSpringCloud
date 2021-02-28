@@ -1,4 +1,4 @@
-package com.zly.service;
+package com.zly.service.rpc;
 
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
