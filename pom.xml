@@ -73,8 +73,9 @@
 
 
     <modules>
-        <module>provider</module>
-        <module>consumer</module>
+        <module>Provider-userFacade</module>
+        <module>Consumer-home</module>
         <module>EurekaServer</module>
+        <module>Gateway-zuul</module>
     </modules>
 </project>

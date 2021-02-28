@@ -20,13 +20,6 @@
 
 ### 7.Spring Cloud Config: 动态更新配置文件，类似携程的Apollo
 
-二、 
-1. springCloud有3种服务调用方式
-- 使用抽象的LoadBalancerClient  
 
-- ribbon + restTemplate
-
-- feign
-    - feign默认也集成了 ribbon
 ## 参考资料
 1. [方志鹏博客<<史上最简单的 SpringCloud 教程>>](https://forezp.blog.csdn.net/article/details/70148833)

@@ -1,6 +1,6 @@
-package com.zly.service.fallback;
+package com.zly.springcloud.service.fallback;
 
-import com.zly.service.rpc.RpcUserInterface;
+import com.zly.springcloud.service.rpc.RpcUserInterface;
 import org.springframework.stereotype.Service;
 
 @Service

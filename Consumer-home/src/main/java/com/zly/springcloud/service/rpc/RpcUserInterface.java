@@ -1,7 +1,6 @@
-package com.zly.service.rpc;
+package com.zly.springcloud.service.rpc;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.zly.service.fallback.RpcUserInterfaceFallBack;
+import com.zly.springcloud.service.fallback.RpcUserInterfaceFallBack;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

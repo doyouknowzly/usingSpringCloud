@@ -1,10 +1,7 @@
-package com.zly.controller;
+package com.zly.springcloud.controller;
 
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.zly.service.UserService;
-import com.zly.service.rpc.RpcUserInterface;
-import com.zly.service.rpc.RpcUserService;
+import com.zly.springcloud.service.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

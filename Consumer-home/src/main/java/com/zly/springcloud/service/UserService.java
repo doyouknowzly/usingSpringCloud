@@ -1,8 +1,8 @@
-package com.zly.service;
+package com.zly.springcloud.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.zly.service.rpc.RpcUserInterface;
-import com.zly.service.rpc.RpcUserService;
+import com.zly.springcloud.service.rpc.RpcUserInterface;
+import com.zly.springcloud.service.rpc.RpcUserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
